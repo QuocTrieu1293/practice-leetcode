@@ -48,9 +48,7 @@ class Solution {
     while (i < m && pathToStart.charAt(i) == pathToDest.charAt(i)) {
       i++;
     }
-    System.out.println(len1 + " " + len2 + " " + i);
-    System.out.println(pathToStart.toString());
-    System.out.println(pathToDest.toString());
+
     rs.append("U".repeat(len1 - i));
     rs.append(pathToDest.substring(i, len2));
 
